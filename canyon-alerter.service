@@ -1,0 +1,7 @@
+[Unit]
+Description=Runs canyon-alerter
+Wants=canyon-alerter.timer
+
+[Service]
+ExecStart=/tmp/canyon-alerter.sh
+WorkingDirectory=/tmp

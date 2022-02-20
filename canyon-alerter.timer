@@ -1,0 +1,12 @@
+[Unit]
+Description=Run canyon-alerter every 5 minutes
+Requires=canyon-alerter.service
+
+[Timer]
+Unit=canyon-alerter.service
+OnUnitInactiveSec=5m
+RandomizedDelaySec=1m
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target
